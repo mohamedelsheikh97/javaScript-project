@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand park</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7644db25b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar navbar-expand-md pt-2">
+        <div class="container">
+            <div class="logo"><a href="index.html">Brand <span class="park">park</span> </a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainmenu">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
+            </ul>
+            <div class="bag"><a href="#"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+            <span>0</span></div>
+        </div>
+        </div>
+        </div>
+    
+    <!-- slider -->
+    <div class="slider">
+        <div class="container">
+            <button onclick="previous()" class="btn btn-light">&lt;</button>
+            <img src="imgs/1.jpg" alt="" id="img" width="100px" />
+            <button onclick="next()" class="btn btn-light">&gt;</button>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="container">
+            <div class="row"> 
+            <div class="col-xl-8 col-md-12 m-auto"><img src="imgs/Screenshot 2023-01-06 210041.png" alt=""></div>
+            <div class="content col-xl-4 col-md-12 m-auto">
+                <h2>The clothing of confident men</h2><br><br><br><br><br>
+                <h3>#Male_Fashion</h3>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="container">
+            <button class="btn btn-primary" onclick="jeanes()">Jeanes</button>
+            <button class="btn btn-primary" onclick="tshirts()">T-shirts</button>
+            <button class="btn btn-primary" onclick="shoes()">Shoes</button>
+        </div>
+        <div class="products">
+            <div class="jeans-sec">
+                <div class="container row m-auto">
+                
+                <div class="card col-xl-4 col-md-12 m-auto " style="width: 18rem;">
+                    <img src="imgs/jeans1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AE AIRFLEX+ SLIM JEAN</h5>
+                        <p class="card-text">AirFlex+
+                            Authentic denim look with lightweight flexibility and comfort you have to feel to believe.</p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                    </div>
+                </div>
+                
+                <div class="card col-xl-4 col-md-12 m-auto" style="width: 18rem;">
+                    <img src="imgs/jeans2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AE AIRFLEX+ SLIM JEAN</h5>
+                        <p class="card-text">High stretch level that keeps its shape Gray wash</p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                    </div>
+                </div>
+                <div class="card col-xl-4 col-md-12 m-auto p" style="width: 18rem;">
+                    <img src="imgs/jeans3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AE AIRFLEX+ ATHLETIC FIT JEAN</h5>
+                        <p class="card-text">High stretch level that keeps its shape
+                            Naturally faded to look like your favorite lived-in jeans
+                            Black wash - wear it like you mean it</p>
+                        <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                    </div>
+                </div>
+                    
+            </div>
+            </div>
+            <div class="tshirts-sec">
+                <div class="container row m-auto">
+                    <div class="card col-xl-4 col-md-12 m-auto" style="width: 18rem;">
+                        <img src="imgs/tshirt1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">AE SUPER SOFT SLUB HOODIE T-SHIRT</h5>
+                            <p class="card-text">Kangaroo pocket
+                                Straight hem
+                                This shirt is Real Good: made with the planet in mind and a promise to continue to do better</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                        </div>
+                    </div>
+                    <div class="card col-xl-4 col-md-12 m-auto" style="width: 18rem;">
+                        <img src="imgs/tshirt2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">AE SUPER SOFT THERMAL HOODIE T-SHIRT</h5>
+                            <p class="card-text">Made from a super soft & cozy thermal construction
+                                Drawstring hood
+                                Button-up henley placket
+                                Embroidered eagle logo on the chest</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                        </div>
+                    </div>
+                    <div class="card col-xl-4 col-md-12 m-auto" style="width: 18rem;">
+                        <img src="imgs/tshirt3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">AE SUPER SOFT THERMAL HOODIE T-SHIRT</h5>
+                            <p class="card-text">High stretch level that keeps its shape
+                                Naturally faded to look like your favorite lived-in jeans
+                                Black wash - wear it like you mean it</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <div class="shoes-sec">
+                <div class="container row m-auto">
+                    <div class="card col-xl-4 col-md-12 m-auto" style="width: 18rem;">
+                        <img src="imgs/shoe.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">GALAXY 6 RUNNING SHOES</h5>
+                            <p class="card-text">Kangaroo pocket
+                                Straight hem
+                                This shirt is Real Good: made with the planet in mind and a promise to continue to do better</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                        </div>
+                    </div>
+                    <div class="card col-xl-4 col-md-12 m-auto" style="width: 18rem;">
+                        <img src="imgs/shoe2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">COURT PLATFORM CLN SHOES</h5>
+                            <p class="card-text">Made from a super soft & cozy thermal construction
+                                Drawstring hood
+                                Button-up henley placket
+                                Embroidered eagle logo on the chest</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                        </div>
+                    </div>
+                    <div class="card col-xl-4 col-md-12 m-auto" style="width: 18rem;">
+                        <img src="imgs/shoe3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CLOUDFOAM PURE 2.0 SHOES</h5>
+                            <p class="card-text">High stretch level that keeps its shape
+                                Naturally faded to look like your favorite lived-in jeans
+                                Black wash - wear it like you mean it</p>
+                            <a href="#" class="btn btn-primary" onclick="add()">Add to basket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row w-100 justify-content-between">
+                <div class="col-xl-3 col-md-12">
+                    <div class="logo"><a href="#">Brand <span class="park">park</span> </a></div>
+                    <h4>The clothing of confident men</h4>
+                </div>
+                <div class="docs col-xl-3 col-md-6">
+                    <a href="">About</a>
+                    <a href="">Jobs</a>
+                    <a href="">Docs</a>
+                </div>
+                <div class="terms col-xl-3 col-md-6">
+                    <a href="">Terms and conditions</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Cookies polics</a>
+                </div>
+                <div class="chat col-xl-3 col-md-12">
+                    <p>let's chat</p>
+                    <a href="mailto:mohamedali9756@gmail.com">mohamedali9756@gmail.com</a>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/mohamed.elsheikh.9849" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/moelshiekh" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/muhammed.el_sheikh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
